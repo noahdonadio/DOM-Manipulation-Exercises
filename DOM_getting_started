@@ -1,0 +1,32 @@
+document.getElementById('container');
+document.querySelector('#container');
+document.querySelectorAll('.second');
+document.querySelector('ol.third');
+let sectionText = document.querySelector('#container');
+
+let helloText = document.createElement('span');
+
+helloText.innerText = 'Hello!'; 
+
+sectionText.prepend(helloText);
+
+let footer = document.querySelector('.footer');
+footer.classList.add('main');
+
+footer.classList.remove('main');
+
+let addLi = document.createElement('li');
+
+addLi.innerText = 'four';
+
+let uList = document.querySelector('ul');
+
+uList.appendChild(addLi);
+
+let liOfOl = document.querySelectorAll('ol li');
+
+for (let i = 0; i < liOfOl.length; i++){
+    liOfOl[i].style.backgroundColor = 'green';
+}
+
+footer.remove();
